@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgrey;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#logo-container{
+    display: none;
+}
+
+p{
+    font-size: 12px;
+}
+
+button:hover, label:hover{
+    cursor: pointer;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+input:hover{
+    cursor: text;
+}
+
+.login-card{
+    width: 922px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    overflow: hidden;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#login-card--form{
+    background-color: white;
+    padding: 120px 110px;
+}
+
+#form-text{
+    margin-bottom: 20px;
+}
+
+#form-text h2{
+    margin-bottom: 9px;
+}
+
+label{
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input:focus{
+    border: 1px solid black;
+}
+
+#pass::placeholder{
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20%;
+}
+
+.form-precautions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+#remember-pass{
+    display: flex;
+    height: 13px;
+    width: fit-content;
+    gap: 4px;
+}
+
+#remember{
+    margin: 0px;
+    width: auto;
+}
+
+#remember:hover{
+    cursor: pointer;
+}
+
+#remember-label{
+    display: inline-block;
+    align-self: baseline;
+}
+
+#forgot-pass button{
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+#forgot-pass button:hover{
+    text-decoration: underline;
+}
+
+#sign-in-options{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 30px;
+}
+
+.sign-in-btn{
+    height: 30px;
+    border: 1px solid lightgrey; 
+    border-radius: 7px;
+}
+
+.top-btn{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.top-btn:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.bottom-btn{
+    background-color: white;
+    padding: 5px 0px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.google{
+    height: 18px;
+    width: 18px;
+}
+
+.bottom-btn:hover{
+    border: 2px solid black;
+}
+
+#sign-up{
+    text-align: center;
+}
+
+#sign-up a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#login-card--review{
+    background: url(Images/pexels-hasan-albari-1229861.jpg);
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+    color: white;
+}
+
+#review-review{
+    margin-inline: auto;
+    padding: 20px 15px;
+    width: 90%;
+    position: relative;
+    top: 54%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+
+
+#review-review--text p{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+
+}
+
+#review-review--rating{
+    margin-top: 10px;
+    float: right;
+}
+
+#review-review--info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#info-name h2{
+    margin-bottom: 15px;
+}
+
+#info-name h5{
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+#info-name p{
+    font-weight: lighter;
+}
+
+#info-buttons{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#info-buttons svg:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+#info-buttons svg:active{
+    background: none;
+}
+
+@media(max-width: 430px){
+    .login-card{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    #login-card--review{
+        display: none;
+    }
+
+    #login-card--form{
+        padding: 40px 10px 110px 10px;
+    }
+
+    #logo-container{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 40px;
+        height: 40px;
+    }
+}
