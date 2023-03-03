@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@400;500;700&family=Montserrat:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Questrial&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Log in page | Untitled UI</title>
+</head>
+<body>
+    <div class="login-card">
+        <div id="login-card--form">
+            <div id="logo-container">
+                <img id="logo" src="Images/untitled-ui.png">
+            </div>
+            <div id="form-text">
+                <h2>Welcome back</h2>
+                <p>Welcome back! Please enter your details</p>
+            </div>
+
+            <form>
+
+                <label for="email-address">Email</label>
+                <input type="email" id="email-address" placeholder="Enter your email">
+
+                <label for="pass">Password</label>
+                <input type="password" id="pass" placeholder="........">
+
+                <div class="form-precautions">
+                    <div id="remember-pass">
+                        <input type="checkbox" id="remember">
+                        <label for="remember" id="remember-label">Remember for 30 days</label> 
+                    </div>
+                    <div id="forgot-pass">
+                        <button>Forgot password</button>
+                    </div>
+                </div>
+
+            </form>
+
+            <div id="sign-in-options">
+                <button class="sign-in-btn top-btn">Sign in</button>
+                <button class="sign-in-btn bottom-btn">
+                <svg viewBox="0 0 48 48" class="google">
+                    <title>google logo</title>
+                    <clipPath id="g">
+                        <path d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/>
+                    </clipPath>
+                    <g class="colors" clip-path="url(#g)">
+                        <path fill="#FBBC05" d="M0 37V11l17 13z"/>
+                        <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/>
+                        <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/>
+                        <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/>
+                    </g>
+                </svg> Sign in with Google</button>
+            </div>
+            
+            <div id="sign-up">
+                <p>Don't have an account? <a href="#">Sign up for free</a></p>
+            </div>
+
+        </div>
+
+        <div id="login-card--review">
+            <div id="review-review">
+                <div id="review-review--text">
+                    <p>"We've been using untitled to kick start every new project and can't imagine working without it."</p>
+                </div>
+                <div id="review-review--rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star" width="15" height="15" viewBox="0 0 512 512" id="IconChangeColor"><title>ionicons-v5-e</title><path d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>                   
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star" width="15" height="15" viewBox="0 0 512 512" id="IconChangeColor"><title>ionicons-v5-e</title><path d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star" width="15" height="15" viewBox="0 0 512 512" id="IconChangeColor"><title>ionicons-v5-e</title><path d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star" width="15" height="15" viewBox="0 0 512 512" id="IconChangeColor"><title>ionicons-v5-e</title><path d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="star" width="15" height="15" viewBox="0 0 512 512" id="IconChangeColor"><title>ionicons-v5-e</title><path d="M496,203.3H312.36L256,32,199.64,203.3H16L166.21,308.7,107.71,480,256,373.84,404.29,480,345.68,308.7Z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                </div>
+                <div id="review-review--info">
+                    <div id="info-name">
+                        <h2>Andi Lane</h2>
+                        <h5>Founder, Catalog</h5>
+                        <p>Web Design Agency</p>
+                    </div>
+                    <div id="info-buttons">
+                        <svg fill="white" width="40" height="40" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 500 0C 224 0 0 224 0 500C 0 776 224 1000 500 1000C 776 1000 1000 776 1000 500C 1000 224 776 0 500 0C 500 0 500 0 500 0M 500 25C 762 25 975 238 975 500C 975 762 762 975 500 975C 238 975 25 762 25 500C 25 238 238 25 500 25C 500 25 500 25 500 25M 509 241C 509 241 509 241 509 241C 509 241 509 241 509 241C 509 241 709 441 709 441C 714 446 714 454 709 459C 704 464 696 464 691 459C 691 459 513 280 513 280C 513 280 513 750 513 750C 513 757 508 763 501 763C 494 763 488 757 488 750C 488 750 488 280 488 280C 488 280 309 459 309 459C 304 464 296 464 291 459C 286 454 286 446 291 441C 291 441 490 243 490 243C 492 239 496 237 500 237C 503 237 506 239 509 241C 509 241 509 241 509 241" transform="rotate(270,500,500)"/></svg>
+                        <svg fill="white" width="40" height="40" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M 500 0C 224 0 0 224 0 500C 0 776 224 1000 500 1000C 776 1000 1000 776 1000 500C 1000 224 776 0 500 0C 500 0 500 0 500 0M 500 25C 762 25 975 238 975 500C 975 762 762 975 500 975C 238 975 25 762 25 500C 25 238 238 25 500 25C 500 25 500 25 500 25M 509 241C 509 241 509 241 509 241C 509 241 509 241 509 241C 509 241 709 441 709 441C 714 446 714 454 709 459C 704 464 696 464 691 459C 691 459 513 280 513 280C 513 280 513 750 513 750C 513 757 508 763 501 763C 494 763 488 757 488 750C 488 750 488 280 488 280C 488 280 309 459 309 459C 304 464 296 464 291 459C 286 454 286 446 291 441C 291 441 490 243 490 243C 492 239 496 237 500 237C 503 237 506 239 509 241C 509 241 509 241 509 241" transform="rotate(90,500,500)"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
