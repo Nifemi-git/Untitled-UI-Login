@@ -24,10 +24,10 @@
 
             <form>
 
-                <label for="email-address">Email</label>
+                <label for="email-address">Email <span class="err-mssg" id="err-mssg1">This field is required</span> </label>
                 <input type="email" id="email-address" placeholder="Enter your email">
 
-                <label for="pass">Password</label>
+                <label for="pass">Password <span class="err-mssg" id="err-mssg2">This field is required</span> </label>
                 <input type="password" id="pass" placeholder="........">
 
                 <div class="form-precautions">
@@ -43,20 +43,21 @@
             </form>
 
             <div id="sign-in-options">
-                <button class="sign-in-btn top-btn">Sign in</button>
-                <button class="sign-in-btn bottom-btn">
-                <svg viewBox="0 0 48 48" class="google">
-                    <title>google logo</title>
-                    <clipPath id="g">
-                        <path d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/>
-                    </clipPath>
-                    <g class="colors" clip-path="url(#g)">
-                        <path fill="#FBBC05" d="M0 37V11l17 13z"/>
-                        <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/>
-                        <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/>
-                        <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/>
-                    </g>
-                </svg> Sign in with Google</button>
+                <button class="sign-in-btn top-btn" id="sign-in-1">Sign in</button>
+                <button class="sign-in-btn bottom-btn" id="sign-in-wggl">
+                    <svg viewBox="0 0 48 48" class="google">
+                        <title>google logo</title>
+                        <clipPath id="g">
+                            <path d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/>
+                        </clipPath>
+                        <g class="colors" clip-path="url(#g)">
+                            <path fill="#FBBC05" d="M0 37V11l17 13z"/>
+                            <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/>
+                            <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/>
+                            <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/>
+                        </g>
+                    </svg>Sign in with Google
+                </button>
             </div>
             
             <div id="sign-up">
@@ -91,5 +92,8 @@
             </div>
         </div>
     </div>
+
+
+    <script src="Script.js"></script>
 </body>
 </html>
